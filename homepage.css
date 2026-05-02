@@ -1,0 +1,846 @@
+/* ============================================
+   AMERICAN FLUFFY TOWEL — HOMEPAGE
+   MOBILE FIRST — base styles = mobile
+   Desktop overrides at 640px and 1024px+
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/* ---- RESET & BASE ---- */
+.aft-homepage * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.aft-homepage {
+  font-family: 'Cairo', sans-serif;
+  color: #222222;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+.aft-homepage a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.aft-homepage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================
+   HERO — mobile base
+   ============================================ */
+.aft-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.aft-hero__left {
+  background: #F5F0E6;
+  padding: 48px 24px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aft-hero__eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #EDB909;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aft-hero__eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: #EDB909;
+  flex-shrink: 0;
+}
+
+.aft-hero__h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+.aft-hero__h1 em {
+  font-style: italic;
+  color: #7A6A4A;
+}
+
+.aft-hero__sub {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #7A6A4A;
+  margin-bottom: 28px;
+}
+
+.aft-hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.aft-btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #EDB909;
+  color: #222222;
+  font-family: 'Cairo', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 14px 24px;
+  border-radius: 4px;
+  border: 2px solid #EDB909;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.aft-btn-primary:hover { background: #c8960a; border-color: #c8960a; }
+
+.aft-btn-ghost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: #222222;
+  font-family: 'Cairo', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 14px 24px;
+  border-radius: 4px;
+  border: 2px solid #E8E0D0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.aft-btn-ghost:hover { border-color: #222222; background: #222222; color: #ffffff; }
+
+.aft-hero__badges {
+  display: flex;
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid #E8E0D0;
+  flex-wrap: wrap;
+}
+
+.aft-hero__badge { display: flex; flex-direction: column; gap: 2px; }
+
+.aft-hero__badge-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7A6A4A;
+}
+
+.aft-hero__badge-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.aft-hero__right {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.aft-hero__img-main { position: absolute; inset: 0; }
+
+.aft-hero__img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.2) 0%, transparent 60%);
+}
+
+.aft-hero__tag {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  z-index: 5;
+}
+
+.aft-hero__tag-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7A6A4A;
+}
+
+.aft-hero__tag-value {
+  font-size: 14px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.aft-hero__tag-sub { font-size: 10px; color: #7A6A4A; }
+
+/* ============================================
+   TRUST BAR — scrollable on mobile
+   ============================================ */
+.aft-trust {
+  background: #222222;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.aft-trust::-webkit-scrollbar { display: none; }
+
+.aft-trust__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  flex-shrink: 0;
+}
+
+.aft-trust__icon { width: 16px; height: 16px; color: #EDB909; flex-shrink: 0; }
+
+.aft-trust__text {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  white-space: nowrap;
+}
+
+/* ============================================
+   STORY — mobile base
+   ============================================ */
+.aft-story {
+  padding: 56px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: #ffffff;
+}
+
+.aft-story__images {
+  position: relative;
+  height: 300px;
+}
+
+.aft-story__img-big {
+  position: absolute;
+  top: 0; left: 0;
+  width: 75%; height: 85%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.aft-story__img-small {
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 48%; height: 55%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  border: 5px solid #ffffff;
+}
+
+.aft-story__accent {
+  position: absolute;
+  top: -12px; left: -12px;
+  width: 60px; height: 60px;
+  border: 3px solid #EDB909;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.aft-story__content { display: flex; flex-direction: column; gap: 18px; }
+
+.aft-section-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #EDB909;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aft-section-label::before {
+  content: '';
+  width: 20px; height: 2px;
+  background: #EDB909;
+  flex-shrink: 0;
+}
+
+.aft-story__h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #222222;
+}
+
+.aft-story__h2 em { font-style: italic; color: #7A6A4A; }
+
+.aft-story__body { font-size: 15px; line-height: 1.8; color: #7A6A4A; }
+
+.aft-story__pillars { display: flex; flex-direction: column; gap: 12px; }
+
+.aft-story__pillar { display: flex; gap: 12px; align-items: flex-start; }
+
+.aft-story__pillar-num {
+  width: 32px; height: 32px; min-width: 32px;
+  background: #F5F0E6;
+  border-radius: 4px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 800; color: #EDB909;
+}
+
+.aft-story__pillar-text strong {
+  display: block;
+  font-size: 13px; font-weight: 700; color: #222222; margin-bottom: 2px;
+}
+
+.aft-story__pillar-text span { font-size: 12px; color: #7A6A4A; line-height: 1.5; }
+
+/* ============================================
+   COLLECTIONS — mobile base
+   ============================================ */
+.aft-collections {
+  background: #F5F0E6;
+  padding: 56px 24px;
+}
+
+.aft-collections__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.aft-collections__header-left { display: flex; flex-direction: column; gap: 6px; }
+
+.aft-section-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 1.2;
+}
+
+.aft-collections__link {
+  font-size: 13px; font-weight: 700;
+  color: #222222;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #EDB909;
+  align-self: flex-start;
+}
+
+.aft-collections__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.aft-coll-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  height: 220px;
+  display: block;
+  background: #E8E0D0;
+}
+
+.aft-coll-card__img {
+  position: absolute; inset: 0;
+  transition: transform 0.6s ease;
+}
+
+.aft-coll-card:hover .aft-coll-card__img { transform: scale(1.05); }
+
+.aft-coll-card__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(34,34,34,0.78) 0%, rgba(34,34,34,0.08) 55%, transparent 100%);
+}
+
+.aft-coll-card__body {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 20px 18px;
+  z-index: 2;
+}
+
+.aft-coll-card__hook {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: #EDB909; margin-bottom: 4px;
+}
+
+.aft-coll-card__name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 600;
+  color: #ffffff; line-height: 1.2; margin-bottom: 6px;
+}
+
+.aft-coll-card__cta {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 700;
+  color: rgba(255,255,255,0.8); letter-spacing: 0.04em;
+}
+
+/* ============================================
+   FEATURES — mobile base
+   ============================================ */
+.aft-features {
+  background: #ffffff;
+  padding: 56px 24px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #E8E0D0;
+  border-bottom: 1px solid #E8E0D0;
+}
+
+.aft-feature {
+  padding: 28px 0;
+  border-bottom: 1px solid #E8E0D0;
+  display: flex; flex-direction: column; gap: 12px;
+}
+
+.aft-feature:first-child { padding-top: 0; }
+.aft-feature:last-child { border-bottom: none; padding-bottom: 0; }
+
+.aft-feature__icon {
+  width: 44px; height: 44px;
+  background: #F5F0E6; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.aft-feature__icon svg { width: 20px; height: 20px; color: #EDB909; }
+
+.aft-feature__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px; font-weight: 600; color: #222222;
+}
+
+.aft-feature__body { font-size: 14px; line-height: 1.75; color: #7A6A4A; }
+
+/* ============================================
+   RITUAL — mobile base
+   ============================================ */
+.aft-ritual {
+  background: #F5F0E6;
+  padding: 56px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.aft-ritual__content { display: flex; flex-direction: column; gap: 18px; }
+
+.aft-ritual__h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px; font-weight: 600; line-height: 1.2; color: #222222;
+}
+
+.aft-ritual__h2 em { font-style: italic; color: #7A6A4A; }
+
+.aft-ritual__body { font-size: 15px; line-height: 1.8; color: #7A6A4A; }
+
+.aft-ritual__moments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.aft-ritual__moment {
+  background: #ffffff; border-radius: 6px;
+  padding: 14px; display: flex; flex-direction: column; gap: 4px;
+  border: 1px solid #E8E0D0;
+}
+
+.aft-ritual__moment-emoji { font-size: 20px; }
+.aft-ritual__moment-title { font-size: 13px; font-weight: 700; color: #222222; }
+.aft-ritual__moment-desc { font-size: 12px; color: #7A6A4A; line-height: 1.5; }
+
+.aft-ritual__images {
+  position: relative;
+  height: 320px;
+}
+
+.aft-ritual__img-top {
+  position: absolute;
+  top: 0; right: 0;
+  width: 78%; height: 60%;
+  border-radius: 4px; overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+}
+
+.aft-ritual__img-bottom {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 60%; height: 50%;
+  border-radius: 4px; overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+  border: 5px solid #F5F0E6;
+}
+
+.aft-ritual__quote {
+  position: absolute;
+  bottom: 10px; right: 0;
+  background: #EDB909;
+  border-radius: 6px;
+  padding: 12px 14px;
+  width: 170px;
+  z-index: 5;
+  box-shadow: 0 8px 24px rgba(237,185,9,0.3);
+}
+
+.aft-ritual__quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 12px; font-style: italic;
+  font-weight: 600; line-height: 1.4; color: #222222;
+}
+
+.aft-ritual__quote-author {
+  font-size: 10px; font-weight: 700;
+  margin-top: 6px; color: rgba(34,34,34,0.6);
+}
+
+/* ============================================
+   REVIEWS — mobile base
+   ============================================ */
+.aft-reviews { background: #ffffff; padding: 56px 24px; }
+
+.aft-reviews__header {
+  text-align: center; margin-bottom: 32px;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+
+.aft-reviews__grid { display: flex; flex-direction: column; gap: 14px; }
+
+.aft-review-card {
+  background: #F5F0E6; border-radius: 8px;
+  padding: 22px; display: flex; flex-direction: column; gap: 12px;
+  border: 1px solid #E8E0D0;
+}
+
+.aft-review-card__stars { display: flex; gap: 3px; }
+
+.aft-star {
+  width: 13px; height: 13px; background: #EDB909;
+  clip-path: polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+}
+
+.aft-review-card__quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px; font-style: italic;
+  line-height: 1.65; color: #222222;
+}
+
+.aft-review-card__footer {
+  padding-top: 12px;
+  border-top: 1px solid #E8E0D0;
+}
+
+.aft-review-card__author { font-size: 13px; font-weight: 700; color: #222222; }
+.aft-review-card__location { font-size: 12px; color: #7A6A4A; margin-top: 2px; }
+.aft-review-card__product {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: #EDB909; margin-top: 5px;
+}
+
+/* ============================================
+   CERTS — mobile base
+   ============================================ */
+.aft-certs {
+  background: #222222;
+  padding: 56px 24px;
+  display: flex; flex-direction: column; gap: 36px;
+}
+
+.aft-certs__left { display: flex; flex-direction: column; gap: 14px; }
+
+.aft-certs__label {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: #EDB909; display: flex; align-items: center; gap: 8px;
+}
+
+.aft-certs__label::before { content: ''; width: 20px; height: 2px; background: #EDB909; }
+
+.aft-certs__h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 600; color: #ffffff; line-height: 1.25;
+}
+
+.aft-certs__body { font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.6); }
+
+.aft-certs__right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.aft-cert-badge {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px; padding: 14px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+
+.aft-cert-badge__icon { font-size: 20px; }
+.aft-cert-badge__name { font-size: 12px; font-weight: 700; color: #ffffff; line-height: 1.3; }
+.aft-cert-badge__desc { font-size: 11px; color: rgba(255,255,255,0.45); line-height: 1.5; }
+
+/* ============================================
+   EMAIL — mobile base
+   ============================================ */
+.aft-email {
+  background: #F5F0E6;
+  padding: 56px 24px;
+  display: flex; flex-direction: column; gap: 36px;
+}
+
+.aft-email__content { display: flex; flex-direction: column; gap: 14px; }
+
+.aft-email__h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 600; line-height: 1.2; color: #222222;
+}
+
+.aft-email__h2 em { font-style: italic; color: #7A6A4A; }
+
+.aft-email__body { font-size: 15px; line-height: 1.75; color: #7A6A4A; }
+
+.aft-email__form { display: flex; flex-direction: column; gap: 10px; }
+
+.aft-email__input {
+  padding: 14px 16px;
+  border: 2px solid #E8E0D0; border-radius: 4px;
+  font-family: 'Cairo', sans-serif; font-size: 15px;
+  color: #222222; background: #ffffff; outline: none;
+  width: 100%; -webkit-appearance: none;
+  transition: border-color 0.2s;
+}
+
+.aft-email__input:focus { border-color: #EDB909; }
+.aft-email__input::placeholder { color: #C8BFA8; }
+
+.aft-email__submit {
+  padding: 14px 24px;
+  background: #EDB909; color: #222222;
+  font-family: 'Cairo', sans-serif;
+  font-size: 15px; font-weight: 700; border: none;
+  border-radius: 4px; cursor: pointer; width: 100%;
+  -webkit-appearance: none; transition: background 0.2s;
+}
+
+.aft-email__submit:hover { background: #c8960a; }
+
+.aft-email__privacy { font-size: 11px; color: #C8BFA8; text-align: center; }
+
+.aft-email__image {
+  height: 260px; border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+}
+
+/* ============================================
+   TABLET — 640px+
+   ============================================ */
+@media (min-width: 640px) {
+  .aft-hero__h1 { font-size: 40px; }
+  .aft-hero__right { height: 420px; }
+  .aft-hero__actions { flex-direction: row; }
+
+  .aft-collections__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .aft-coll-card { height: 260px; }
+  .aft-coll-card:nth-child(5) { grid-column: 1 / -1; }
+
+  .aft-reviews__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .aft-story__images { height: 360px; }
+  .aft-ritual__images { height: 380px; }
+  .aft-email__image { height: 340px; }
+
+  .aft-trust {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+  }
+}
+
+/* ============================================
+   DESKTOP — 1024px+
+   ============================================ */
+@media (min-width: 1024px) {
+
+  /* Hero */
+  .aft-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+  }
+
+  .aft-hero__left {
+    padding: 80px 60px 80px 72px;
+    justify-content: center;
+    position: relative;
+  }
+
+  .aft-hero__left::after {
+    content: '';
+    position: absolute;
+    right: -60px; top: 0; bottom: 0;
+    width: 120px;
+    background: #F5F0E6;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    z-index: 3;
+  }
+
+  .aft-hero__h1 { font-size: clamp(36px, 4vw, 56px); }
+  .aft-hero__right { height: auto; }
+  .aft-hero__img-main { position: absolute; inset: 0; }
+
+  /* Story */
+  .aft-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 100px 72px;
+    align-items: center;
+  }
+  .aft-story__images { height: 560px; }
+  .aft-story__h2 { font-size: clamp(30px, 3vw, 44px); }
+
+  /* Collections */
+  .aft-collections { padding: 100px 72px; }
+  .aft-collections__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 56px;
+  }
+  .aft-collections__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 360px 360px;
+    gap: 16px;
+  }
+  .aft-coll-card { height: auto; }
+  .aft-coll-card:nth-child(1) { grid-column: 1 / 6; grid-row: 1; }
+  .aft-coll-card:nth-child(2) { grid-column: 6 / 9; grid-row: 1; }
+  .aft-coll-card:nth-child(3) { grid-column: 9 / 13; grid-row: 1; }
+  .aft-coll-card:nth-child(4) { grid-column: 1 / 5; grid-row: 2; }
+  .aft-coll-card:nth-child(5) { grid-column: 5 / 13; grid-row: 2; }
+
+  .aft-coll-card__hook {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.3s ease;
+  }
+  .aft-coll-card:hover .aft-coll-card__hook { opacity: 1; transform: translateY(0); }
+
+  .aft-coll-card__cta {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.3s ease 0.05s;
+  }
+  .aft-coll-card:hover .aft-coll-card__cta { opacity: 1; transform: translateY(0); }
+
+  /* Features */
+  .aft-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 80px 72px;
+  }
+  .aft-feature {
+    padding: 48px 40px;
+    border-bottom: none;
+    border-right: 1px solid #E8E0D0;
+  }
+  .aft-feature:first-child { padding-top: 48px; }
+  .aft-feature:last-child { border-right: none; border-bottom: none; }
+
+  /* Ritual */
+  .aft-ritual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 100px 72px;
+    align-items: center;
+  }
+  .aft-ritual__images { height: 580px; }
+  .aft-ritual__h2 { font-size: clamp(28px, 3vw, 44px); }
+  .aft-ritual__quote {
+    position: absolute;
+    bottom: auto;
+    top: 52%;
+    right: -10px;
+    width: 200px;
+  }
+
+  /* Reviews */
+  .aft-reviews { padding: 100px 72px; }
+  .aft-reviews__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .aft-review-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .aft-review-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+
+  /* Certs */
+  .aft-certs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 80px 72px;
+    align-items: center;
+  }
+  .aft-certs__h2 { font-size: clamp(24px, 2.5vw, 36px); }
+
+  /* Email */
+  .aft-email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 100px 72px;
+    align-items: center;
+  }
+  .aft-email__image { height: 480px; }
+  .aft-email__h2 { font-size: clamp(26px, 2.8vw, 40px); }
+  .aft-email__submit { width: auto; }
+}
