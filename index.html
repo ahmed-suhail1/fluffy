@@ -1,434 +1,423 @@
-<link rel="stylesheet" href="homepage.css">
-<div class="aft-homepage">
-  <section class="aft-hero">
-    <div class="aft-hero__left">
-      <div class="aft-hero__eyebrow">Crafted in Turkey · Felt in America</div>
+<link rel="stylesheet" href="homepgaes.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SABLE — Luxury Beach Towels</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-      <h1 class="aft-hero__h1">
-        Your everyday ritual<br>
-        deserves something <em>beautiful</em>
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  HERO / BANNER                                      -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="fluffy-hero" id="hero">
+    <!-- Parallax beach scene (replace src with your photo) -->
+    <div class="fluffy-hero__parallax" id="heroParallax">
+      <img
+        class="fluffy-hero__bg-img"
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1800&auto=format&fit=crop"
+        alt="Sunlit beach"
+      />
+      <!-- Gradient veil so text stays legible -->
+      <div class="fluffy-hero__veil"></div>
+    </div>
+
+    <!-- Floating sand-grain texture overlay -->
+    <div class="fluffy-hero__grain"></div>
+
+    <div class="fluffy-hero__content">
+      <p class="fluffy-hero__eyebrow">Est. 2024 — Handcrafted in Turkey</p>
+      <h1 class="fluffy-hero__title">
+        <span class="fluffy-hero__title-line" data-delay="0">Feel the</span>
+        <em class="fluffy-hero__title-line fluffy-hero__title-italic" data-delay="120">Shore</em>
+        <span class="fluffy-hero__title-line" data-delay="240">Everywhere</span>
       </h1>
-
-      <p class="aft-hero__sub">
-        Premium Turkish cotton towels, woven by craftsmen who have perfected
-        the art for generations — certified organic, impossibly soft, made for
-        the moments that define your day.
+      <p class="fluffy-hero__sub">
+        Ultra-plush, quick-dry towels woven for the sun-soaked life.
       </p>
-
-      <div class="aft-hero__actions">
-        <a href="/products" class="aft-btn-primary">
-          Shop now
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="/about-us" class="aft-btn-ghost">Our story</a>
-      </div>
-
-      <div class="aft-hero__badges">
-        <div class="aft-hero__badge">
-          <span class="aft-hero__badge-label">Certified</span>
-          <span class="aft-hero__badge-value">OEKO-TEX &amp; GOTS</span>
-        </div>
-        <div class="aft-hero__badge">
-          <span class="aft-hero__badge-label">Origin</span>
-          <span class="aft-hero__badge-value">Aegean Turkey</span>
-        </div>
-        <div class="aft-hero__badge">
-          <span class="aft-hero__badge-label">Shipping</span>
-          <span class="aft-hero__badge-value">Free over $60</span>
-        </div>
+      <div class="fluffy-hero__ctas">
+        <a href="#shop" class="fluffy-btn fluffy-btn--primary">Shop the Collection</a>
+        <a href="#story" class="fluffy-btn fluffy-btn--ghost">Our Story</a>
       </div>
     </div>
 
-    <div class="aft-hero__right">
-      <div class="aft-hero__img-main">
-        <img src="https://fluffy-towel.com/storage/dsc8097.jpg" alt="Premium Turkish cotton bath towel draped over a bathtub edge, warm natural light" loading="eager">
-      </div>
-      <div class="aft-hero__img-overlay"></div>
-      <div class="aft-hero__tag">
-        <span class="aft-hero__tag-label">Made with</span>
-        <span class="aft-hero__tag-value">Long-staple Cotton</span>
-        <span class="aft-hero__tag-sub">Aegean region, Turkey</span>
-      </div>
+    <!-- Scroll cue -->
+    <div class="fluffy-scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="fluffy-scroll-cue__line"></div>
     </div>
   </section>
-  <div class="aft-trust">
-    <div class="aft-trust__item">
-      <svg class="aft-trust__icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <span class="aft-trust__text">OEKO-TEX Standard 100</span>
-    </div>
-    <div class="aft-trust__item">
-      <svg class="aft-trust__icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
-      <span class="aft-trust__text">GOTS Certified Organic</span>
-    </div>
-    <div class="aft-trust__item">
-      <svg class="aft-trust__icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-      <span class="aft-trust__text">Woven in Turkey</span>
-    </div>
-    <div class="aft-trust__item">
-      <svg class="aft-trust__icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      <span class="aft-trust__text">Free US Shipping over $60</span>
-    </div>
-    <div class="aft-trust__item">
-      <svg class="aft-trust__icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"/></svg>
-      <span class="aft-trust__text">30-Day Returns</span>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  TRUST BAR                                          -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <div class="fluffy-trust">
+    <div class="fluffy-trust__inner">
+      <div class="fluffy-trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14l-4-4 1.41-1.41L11 13.17l6.59-6.59L19 8l-8 8z"/></svg>
+        <span>100% Turkish Cotton</span>
+      </div>
+      <div class="fluffy-trust__dot" aria-hidden="true"></div>
+      <div class="fluffy-trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5 1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm13 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
+        <span>Free Shipping Over €75</span>
+      </div>
+      <div class="fluffy-trust__dot" aria-hidden="true"></div>
+      <div class="fluffy-trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        <span>30-Day Returns</span>
+      </div>
+      <div class="fluffy-trust__dot" aria-hidden="true"></div>
+      <div class="fluffy-trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+        <span>Ships in 2–3 Days</span>
+      </div>
     </div>
   </div>
-  <section class="aft-story">
-    <div class="aft-story__images">
-      <div class="aft-story__accent"></div>
-      <div class="aft-story__img-big">
-        <img src="https://fluffy-towel.com/storage/img-2.jpg" alt="Turkish cotton being woven at an Aegean loom, golden threads in natural light" loading="lazy">
-      </div>
-      <div class="aft-story__img-small">
-        <img src="https://fluffy-towel.com/storage/530-1.jpg" alt="Close-up of OEKO-TEX certified towel fibers, ultra-soft texture" loading="lazy">
-      </div>
-    </div>
 
-    <div class="aft-story__content">
-      <div class="aft-section-label">Our story</div>
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  FEATURED PRODUCT                                   -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="fluffy-featured" id="shop">
+    <div class="fluffy-container">
+      <div class="fluffy-section-label">Featured Drop</div>
+      <h2 class="fluffy-section-title">The <em>Tide</em> Towel</h2>
 
-      <h2 class="aft-story__h2">
-        From the Aegean coast<br>
-        to your <em>bathroom</em>
-      </h2>
-
-      <p class="aft-story__body">
-        On the western shores of Turkey, where the Aegean breeze rolls through
-        cotton fields that have been cultivated for centuries, our towels begin
-        their journey. Long-staple Aegean cotton — the world's finest — is
-        hand-selected, spun slowly, and woven by craftsmen who learned their
-        trade from their fathers, who learned from theirs.
-      </p>
-
-      <p class="aft-story__body">
-        We bring that craftsmanship to American homes. No shortcuts. No
-        synthetic blends. Just pure cotton, certified clean, made to wrap
-        around you every single morning.
-      </p>
-
-      <div class="aft-story__pillars">
-        <div class="aft-story__pillar">
-          <div class="aft-story__pillar-num">01</div>
-          <div class="aft-story__pillar-text">
-            <strong>Turkish heritage</strong>
-            <span>Centuries of weaving tradition, alive in every thread</span>
+      <div class="fluffy-featured__grid">
+        <!-- Product images -->
+        <div class="fluffy-featured__gallery">
+          <div class="fluffy-featured__main-img-wrap">
+            <img
+              class="fluffy-featured__main-img"
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop"
+              alt="The Tide Towel — Sand colour"
+            />
+            <span class="fluffy-badge">New</span>
+          </div>
+          <div class="fluffy-featured__thumbs">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&auto=format&fit=crop" alt="" class="fluffy-featured__thumb fluffy-featured__thumb--active" />
+            <img src="https://images.unsplash.com/photo-1617195920853-1e35b7e33e3d?w=200&auto=format&fit=crop" alt="" class="fluffy-featured__thumb" />
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=200&auto=format&fit=crop" alt="" class="fluffy-featured__thumb" />
           </div>
         </div>
-        <div class="aft-story__pillar">
-          <div class="aft-story__pillar-num">02</div>
-          <div class="aft-story__pillar-text">
-            <strong>Certified clean</strong>
-            <span>OEKO-TEX &amp; GOTS certified — safe for your family and the planet</span>
+
+        <!-- Product info -->
+        <div class="fluffy-featured__info">
+          <div class="fluffy-featured__rating">
+            <span class="fluffy-stars">★★★★★</span>
+            <span class="fluffy-featured__rating-count">4.9 (312 reviews)</span>
           </div>
-        </div>
-        <div class="aft-story__pillar">
-          <div class="aft-story__pillar-num">03</div>
-          <div class="aft-story__pillar-text">
-            <strong>Built to last</strong>
-            <span>Gets softer with every wash — designed for 10 years, not one season</span>
+          <p class="fluffy-featured__tagline">
+            Woven from 600 GSM zero-twist cotton — impossibly soft, bone-dry in minutes.
+          </p>
+          <ul class="fluffy-featured__specs">
+            <li><span>Size</span> 90 × 180 cm</li>
+            <li><span>Weight</span> 600 GSM</li>
+            <li><span>Material</span> 100% Turkish Cotton</li>
+            <li><span>Colours</span> 8 seasonal shades</li>
+          </ul>
+          <div class="fluffy-featured__price-row">
+            <span class="fluffy-featured__price">€64.00</span>
+            <span class="fluffy-featured__old-price">€80.00</span>
+            <span class="fluffy-badge fluffy-badge--gold">20% off</span>
           </div>
-        </div>
-      </div>
-
-      <div style="margin-top: 8px;">
-        <a href="/about-us" class="aft-btn-ghost">Read the full story</a>
-      </div>
-    </div>
-  </section>
-  <section class="aft-collections">
-    <div class="aft-collections__header">
-      <div class="aft-collections__header-left">
-        <div class="aft-section-label">Collections</div>
-        <h2 class="aft-section-h2">Shop by ritual</h2>
-      </div>
-      <a href="/products" class="aft-collections__link">
-        View all products
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-
-    <div class="aft-collections__grid">
-      <a href="/product/bath-towel" class="aft-coll-card">
-        <div class="aft-coll-card__img">
-          <img src="https://fluffy-towel.com/storage/a03/whatsapp-image-2023-01-30-at-003132-1.jpeg" alt="Premium Turkish cotton bath towels in blue, cream, gray, white folded neatly" loading="lazy">
-        </div>
-        <div class="aft-coll-card__overlay"></div>
-        <div class="aft-coll-card__body">
-          <div class="aft-coll-card__hook">The hotel feeling, at home</div>
-          <div class="aft-coll-card__name">Bath Towels</div>
-          <div class="aft-coll-card__cta">
-            Shop now
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </div>
-      </a>
-      <a href="/product/bathrobe" class="aft-coll-card">
-        <div class="aft-coll-card__img">
-          <img src="https://fluffy-towel.com/storage/bathrobes/h01-2-3-4/whatsapp-image-2023-01-29-at-233308.jpeg" alt="Soft Turkish cotton bathrobe in white and gray, hanging on bathroom hook" loading="lazy">
-        </div>
-        <div class="aft-coll-card__overlay"></div>
-        <div class="aft-coll-card__body">
-          <div class="aft-coll-card__hook">The thing you reach for first</div>
-          <div class="aft-coll-card__name">Bathrobes</div>
-          <div class="aft-coll-card__cta">
-            Shop now
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </div>
-      </a>
-      <a href="/product/kitchen-hand-towel" class="aft-coll-card">
-        <div class="aft-coll-card__img">
-          <img src="https://fluffy-towel.com/storage/kitchen-towel/g01/whatsapp-image-2023-02-03-at-004811.jpeg" alt="100% cotton kitchen hand towels hanging in a bright clean kitchen" loading="lazy">
-        </div>
-        <div class="aft-coll-card__overlay"></div>
-        <div class="aft-coll-card__body">
-          <div class="aft-coll-card__hook">The workhorse that earns its place</div>
-          <div class="aft-coll-card__name">Kitchen Towels</div>
-          <div class="aft-coll-card__cta">
-            Shop now
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </div>
-      </a>
-      <a href="/product/dog-jumpsuit" class="aft-coll-card">
-        <div class="aft-coll-card__img">
-          <img src="https://fluffy-towel.com/storage/dog-jumpsuit/whatsapp-image-2023-02-01-at-201614.jpeg" alt="Adorable dog wearing a soft absorbent Turkish cotton jumpsuit after a bath" loading="lazy">
-        </div>
-        <div class="aft-coll-card__overlay"></div>
-        <div class="aft-coll-card__body">
-          <div class="aft-coll-card__hook">Because your dog's spa day matters too</div>
-          <div class="aft-coll-card__name">Dog Jumpsuits</div>
-          <div class="aft-coll-card__cta">
-            Shop now
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </div>
-      </a>
-      <a href="/product/beach-towel" class="aft-coll-card">
-        <div class="aft-coll-card__img">
-          <img src="https://fluffy-towel.com/storage/beach-towels/whatsapp-image-2023-01-29-at-222714.jpeg" alt="Colorful quick-dry Turkish cotton beach towels laid on golden sand at the beach" loading="lazy">
-        </div>
-        <div class="aft-coll-card__overlay"></div>
-        <div class="aft-coll-card__body">
-          <div class="aft-coll-card__hook">Your postcard moment deserves better</div>
-          <div class="aft-coll-card__name">Beach Towels</div>
-          <div class="aft-coll-card__cta">
-            Shop now
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </section>
-  <section class="aft-features">
-    <div class="aft-feature">
-      <div class="aft-feature__icon">
-        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      </div>
-      <div class="aft-feature__title">Certified clean, always</div>
-      <p class="aft-feature__body">
-        OEKO-TEX Standard 100 and GOTS certified means zero harmful chemicals —
-        ever. Safe for babies, sensitive skin, and everyone in between. You
-        shouldn't have to wonder what's touching your skin after a shower.
-      </p>
-    </div>
-
-    <div class="aft-feature">
-      <div class="aft-feature__icon">
-        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-      </div>
-      <div class="aft-feature__title">Softer with every wash</div>
-      <p class="aft-feature__body">
-        Long-staple Aegean cotton has a natural structure that opens up over
-        time. Unlike most towels that go rough after a few months, ours become
-        more luxurious the more you use them. They're built for a decade.
-      </p>
-    </div>
-
-    <div class="aft-feature">
-      <div class="aft-feature__icon">
-        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-      </div>
-      <div class="aft-feature__title">Maximum absorbency</div>
-      <p class="aft-feature__body">
-        The reason Turkish cotton has been used in hammams for centuries is its
-        unmatched ability to absorb water quickly and release it just as fast,
-        so your towel stays fresh and you stay dry after every use.
-      </p>
-    </div>
-  </section>
-  <section class="aft-ritual">
-    <div class="aft-ritual__content">
-      <div class="aft-section-label">365 daily moments</div>
-
-      <h2 class="aft-ritual__h2">
-        A towel is part of<br>
-        <em>every single day</em>
-      </h2>
-
-      <p class="aft-ritual__body">
-        You use a towel more than almost anything else you own — every morning,
-        after every shower, at every beach, every time the dog comes in wet.
-        That's why what it's made of matters more than you might think.
-      </p>
-
-      <div class="aft-ritual__moments">
-        <div class="aft-ritual__moment">
-          <div class="aft-ritual__moment-emoji">🌅</div>
-          <div class="aft-ritual__moment-title">Morning shower</div>
-          <div class="aft-ritual__moment-desc">Step out into something that feels like a five-star hotel, every single morning</div>
-        </div>
-        <div class="aft-ritual__moment">
-          <div class="aft-ritual__moment-emoji">🏖️</div>
-          <div class="aft-ritual__moment-title">Beach day</div>
-          <div class="aft-ritual__moment-desc">Quick-drying and vibrant — the one everyone on the beach will ask about</div>
-        </div>
-        <div class="aft-ritual__moment">
-          <div class="aft-ritual__moment-emoji">🛁</div>
-          <div class="aft-ritual__moment-title">After bath ritual</div>
-          <div class="aft-ritual__moment-desc">Wrap yourself in a robe so soft, getting out of the tub becomes something to look forward to</div>
-        </div>
-        <div class="aft-ritual__moment">
-          <div class="aft-ritual__moment-emoji">🐾</div>
-          <div class="aft-ritual__moment-title">Dog spa day</div>
-          <div class="aft-ritual__moment-desc">Keep your furry friend warm, dry, and cozy — even they deserve the best</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="aft-ritual__images">
-      <div class="aft-ritual__img-top">
-        <img src="https://fluffy-towel.com/storage/530-3.jpg" alt="Person wrapping themselves in a luxurious white Turkish cotton bathrobe, warm morning light" loading="lazy">
-      </div>
-      <div class="aft-ritual__img-bottom">
-        <img src="https://fluffy-towel.com/storage/product-categories/whatsapp-image-2023-02-12-at-223019-1.jpeg" alt="Colorful beach towels spread on sand at a beautiful sunny beach" loading="lazy">
-      </div>
-      <div class="aft-ritual__quote">
-        <div class="aft-ritual__quote-text">"The most used thing in my home — and finally the best."</div>
-        <div class="aft-ritual__quote-author">— Emily R., Austin TX</div>
-      </div>
-    </div>
-  </section>
-  <section class="aft-reviews">
-    <div class="aft-reviews__header">
-      <div class="aft-section-label" style="justify-content: center;">Real stories</div>
-      <h2 class="aft-section-h2">What people are saying</h2>
-    </div>
-
-    <div class="aft-reviews__grid">
-      <div class="aft-review-card">
-        <div class="aft-review-card__stars">
-          <div class="aft-star"></div><div class="aft-star"></div><div class="aft-star"></div><div class="aft-star"></div><div class="aft-star"></div>
-        </div>
-        <div class="aft-review-card__quote">
-          "I bought the bath towel set for our new house and by the time my
-          sister visited, she had ordered her own set before she even left.
-          I've never had a towel this soft in my life."
-        </div>
-        <div class="aft-review-card__footer">
-          <div class="aft-review-card__author">Sarah M.</div>
-          <div class="aft-review-card__location">Charleston, SC</div>
-          <div class="aft-review-card__product">Bath Towel Set</div>
-        </div>
-      </div>
-
-      <div class="aft-review-card">
-        <div class="aft-review-card__stars">
-          <div class="aft-star"></div><div class="aft-star"></div><div class="aft-star"></div><div class="aft-star"></div><div class="aft-star"></div>
-        </div>
-        <div class="aft-review-card__quote">
-          "I'm a nurse. I wash my towels constantly — sometimes twice a day.
-          These are the first towels I've had that haven't turned rough and
-          scratchy after six months. Game changer."
-        </div>
-        <div class="aft-review-card__footer">
-          <div class="aft-review-card__author">James R.</div>
-          <div class="aft-review-card__location">Austin, TX</div>
-          <div class="aft-review-card__product">Bath Towels</div>
-        </div>
-      </div>
-
-      <div class="aft-review-card">
-        <div class="aft-review-card__stars">
-          <div class="aft-star"></div><div class="aft-star"></div><div class="aft-star"></div><div class="aft-star"></div><div class="aft-star"></div>
-        </div>
-        <div class="aft-review-card__quote">
-          "Got the beach towels for a Florida trip. Every single person on the
-          beach asked where they were from. Three of my friends ordered before
-          we even got home. The colors are stunning."
-        </div>
-        <div class="aft-review-card__footer">
-          <div class="aft-review-card__author">Melissa K.</div>
-          <div class="aft-review-card__location">Atlanta, GA</div>
-          <div class="aft-review-card__product">Beach Towels</div>
+          <a href="#" class="fluffy-btn fluffy-btn--primary fluffy-btn--full">Add to Cart</a>
+          <p class="fluffy-featured__guarantee">✓ Free returns &nbsp;·&nbsp; Secure checkout</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="aft-certs">
-    <div class="aft-certs__left">
-      <div class="aft-certs__label">Why it matters</div>
-      <h2 class="aft-certs__h2">
-        Clean from the field<br>to your skin
-      </h2>
-      <p class="aft-certs__body">
-        Our certifications aren't marketing badges — they're guarantees. Every
-        product is independently tested and verified. No toxic dyes, no harmful
-        finishing chemicals, no compromises. Because what you wrap around
-        yourself every day should be as clean as possible.
-      </p>
-      <div style="margin-top: 8px;">
-        <a href="/about-us" class="aft-btn-primary">Learn more about our standards</a>
-      </div>
-    </div>
 
-    <div class="aft-certs__right">
-      <div class="aft-cert-badge">
-        <div class="aft-cert-badge__icon">🏅</div>
-        <div class="aft-cert-badge__name">OEKO-TEX Standard 100</div>
-        <div class="aft-cert-badge__desc">Every component tested for harmful substances. Safe for all skin types.</div>
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  COLLECTION STRIP                                   -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="fluffy-collection" id="collection">
+    <div class="fluffy-container">
+      <div class="fluffy-section-label">The Collection</div>
+      <h2 class="fluffy-section-title">Every <em>Shore,</em> Every Style</h2>
+      <div class="fluffy-collection__grid">
+
+        <article class="fluffy-card">
+          <div class="fluffy-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1617195920853-1e35b7e33e3d?w=600&auto=format&fit=crop" alt="The Drift Towel" />
+            <div class="fluffy-card__hover-cta">Quick View</div>
+          </div>
+          <div class="fluffy-card__body">
+            <span class="fluffy-card__name">The Drift</span>
+            <span class="fluffy-card__price">€58.00</span>
+          </div>
+        </article>
+
+        <article class="fluffy-card">
+          <div class="fluffy-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&auto=format&fit=crop" alt="The Lagoon Towel" />
+            <div class="fluffy-card__hover-cta">Quick View</div>
+          </div>
+          <div class="fluffy-card__body">
+            <span class="fluffy-card__name">The Lagoon</span>
+            <span class="fluffy-card__price">€62.00</span>
+          </div>
+        </article>
+
+        <article class="fluffy-card fluffy-card--tall">
+          <div class="fluffy-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&auto=format&fit=crop" alt="The Dune Towel" />
+            <span class="fluffy-badge">Bestseller</span>
+            <div class="fluffy-card__hover-cta">Quick View</div>
+          </div>
+          <div class="fluffy-card__body">
+            <span class="fluffy-card__name">The Dune</span>
+            <span class="fluffy-card__price">€68.00</span>
+          </div>
+        </article>
+
+        <article class="fluffy-card">
+          <div class="fluffy-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?w=600&auto=format&fit=crop" alt="The Cove Towel" />
+            <div class="fluffy-card__hover-cta">Quick View</div>
+          </div>
+          <div class="fluffy-card__body">
+            <span class="fluffy-card__name">The Cove</span>
+            <span class="fluffy-card__price">€60.00</span>
+          </div>
+        </article>
+
       </div>
-      <div class="aft-cert-badge">
-        <div class="aft-cert-badge__icon">🌿</div>
-        <div class="aft-cert-badge__name">GOTS Certified Organic</div>
-        <div class="aft-cert-badge__desc">Globally recognized standard for organic textiles, from farm to finished product.</div>
-      </div>
-      <div class="aft-cert-badge">
-        <div class="aft-cert-badge__icon">✅</div>
-        <div class="aft-cert-badge__name">ISO 9001</div>
-        <div class="aft-cert-badge__desc">International quality management system. Consistent quality, every time.</div>
-      </div>
-      <div class="aft-cert-badge">
-        <div class="aft-cert-badge__icon">🌍</div>
-        <div class="aft-cert-badge__name">Made in Turkey</div>
-        <div class="aft-cert-badge__desc">Woven in the Aegean region — the world's most respected source of premium cotton.</div>
+      <div class="fluffy-collection__cta-row">
+        <a href="#" class="fluffy-btn fluffy-btn--outline">View All Towels</a>
       </div>
     </div>
   </section>
-  <section class="aft-email">
-    <div class="aft-email__content">
-      <div class="aft-section-label">Get 10% off your first order</div>
-      <h2 class="aft-email__h2">
-        Not sure which towel<br>
-        is <em>right for you?</em>
-      </h2>
-      <p class="aft-email__body">
-        Every home is different. Every routine is different. Join our list and
-        get a personalized recommendation — plus 10% off your first order, free
-        shipping info, and care tips to make your towels last for years.
-      </p>
-      <div class="aft-email__form">
-        <input class="aft-email__input" type="text" name="name" placeholder="Your first name">
-        <input class="aft-email__input" type="email" name="email" placeholder="Your email address">
-        <button class="aft-email__submit" type="submit">Claim my 10% off →</button>
-        <p class="aft-email__privacy">No spam, ever. Unsubscribe anytime. We respect your inbox.</p>
-      </div>
-    </div>
 
-    <div class="aft-email__image">
-      <img src="https://fluffy-towel.com/storage/232323.png" " alt="Neatly folded stack of premium Turkish cotton towels in cream and white with warm afternoon light" loading="lazy">
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  OUR STORY                                          -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="fluffy-story" id="story">
+    <div class="fluffy-story__inner fluffy-container">
+      <div class="fluffy-story__media">
+        <img
+          src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&auto=format&fit=crop"
+          alt="Artisan weaving towels"
+          class="fluffy-story__img"
+        />
+        <div class="fluffy-story__img-accent"></div>
+      </div>
+      <div class="fluffy-story__text">
+        <div class="fluffy-section-label">Our Story</div>
+        <h2 class="fluffy-section-title">Born from<br /><em>Salt &amp; Sun</em></h2>
+        <p>
+          SABLE began on a sun-bleached afternoon in Bodrum, when our founder
+          realised that the world's finest cotton — grown minutes from the Aegean —
+          never made it into the towels people actually loved.
+        </p>
+        <p>
+          We partnered directly with third-generation weavers to create something
+          that feels like a warm breeze and lasts a lifetime. No shortcuts, no
+          synthetic blends — just cotton, craft, and coastline.
+        </p>
+        <a href="#" class="fluffy-btn fluffy-btn--primary">Read the Full Story</a>
+      </div>
     </div>
   </section>
 
-</div>
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  REVIEWS                                            -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="fluffy-reviews" id="reviews">
+    <div class="fluffy-container">
+      <div class="fluffy-section-label">What People Say</div>
+      <h2 class="fluffy-section-title">Loved by <em>Sun Seekers</em></h2>
+
+      <div class="fluffy-reviews__track-wrap">
+        <div class="fluffy-reviews__track" id="reviewTrack">
+
+          <div class="fluffy-review">
+            <div class="fluffy-stars">★★★★★</div>
+            <blockquote>"These are the only towels I'll ever use at the beach. The softness is unreal and they dry so fast."</blockquote>
+            <cite>— Sophie L., Barcelona</cite>
+          </div>
+
+          <div class="fluffy-review">
+            <div class="fluffy-stars">★★★★★</div>
+            <blockquote>"I bought the Tide in three colours. Packs tiny in my beach bag and feels like luxury. Total convert."</blockquote>
+            <cite>— Marco D., Milan</cite>
+          </div>
+
+          <div class="fluffy-review">
+            <div class="fluffy-stars">★★★★☆</div>
+            <blockquote>"Beautiful quality and the packaging was stunning — made it an amazing gift. Will be ordering again."</blockquote>
+            <cite>— Amara K., London</cite>
+          </div>
+
+          <div class="fluffy-review">
+            <div class="fluffy-stars">★★★★★</div>
+            <blockquote>"I've tried a lot of 'premium' towels. SABLE is genuinely different — lighter, softer, and better looking."</blockquote>
+            <cite>— Niklas B., Stockholm</cite>
+          </div>
+
+          <div class="fluffy-review">
+            <div class="fluffy-stars">★★★★★</div>
+            <blockquote>"Arrived in two days, wrapped beautifully. The Dune colour is even more gorgeous in person."</blockquote>
+            <cite>— Chloé M., Paris</cite>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Pagination dots -->
+      <div class="fluffy-reviews__dots" id="reviewDots"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  BLOG PREVIEW                                       -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="fluffy-blog" id="blog">
+    <div class="fluffy-container">
+      <div class="fluffy-section-label">From the Journal</div>
+      <h2 class="fluffy-section-title">Life <em>Beside the Sea</em></h2>
+
+      <div class="fluffy-blog__grid">
+
+        <article class="fluffy-blog-card fluffy-blog-card--hero">
+          <div class="fluffy-blog-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop" alt="" />
+          </div>
+          <div class="fluffy-blog-card__body">
+            <span class="fluffy-blog-card__tag">Style</span>
+            <h3>How to Layer Towels for the Perfect Beach Aesthetic</h3>
+            <p>From colour pairing to sand-to-pool transitions — our guide to looking effortlessly put-together by the water.</p>
+            <a href="#" class="fluffy-link">Read Article →</a>
+          </div>
+        </article>
+
+        <article class="fluffy-blog-card">
+          <div class="fluffy-blog-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=500&auto=format&fit=crop" alt="" />
+          </div>
+          <div class="fluffy-blog-card__body">
+            <span class="fluffy-blog-card__tag">Craft</span>
+            <h3>Inside a Turkish Weaving Mill</h3>
+            <p>We visited our weavers in Denizli to see how zero-twist cotton becomes something extraordinary.</p>
+            <a href="#" class="fluffy-link">Read Article →</a>
+          </div>
+        </article>
+
+        <article class="fluffy-blog-card">
+          <div class="fluffy-blog-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?w=500&auto=format&fit=crop" alt="" />
+          </div>
+          <div class="fluffy-blog-card__body">
+            <span class="fluffy-blog-card__tag">Travel</span>
+            <h3>5 Beaches Worth the Journey in 2025</h3>
+            <p>Our edit of Europe's most under-the-radar shores — bring sunscreen, a good book, and your SABLE.</p>
+            <a href="#" class="fluffy-link">Read Article →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  EMAIL STRIP                                        -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="fluffy-email-strip" id="newsletter">
+    <div class="fluffy-email-strip__inner fluffy-container">
+      <div class="fluffy-email-strip__text">
+        <h2>Get 10% Off Your First Order</h2>
+        <p>Join the SABLE circle for early access, seasonal drops and coastal living inspiration.</p>
+      </div>
+      <form class="fluffy-email-strip__form" onsubmit="return false;">
+        <input type="email" placeholder="your@email.com" class="fluffy-email-input" />
+        <button type="submit" class="fluffy-btn fluffy-btn--primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+  <script>
+    /* ── Inline JS so you can move to main.js if preferred ── */
+
+    // Parallax on scroll
+    const hero     = document.getElementById('heroParallax');
+    const heroSec  = document.getElementById('hero');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+
+      // Parallax shift — image moves up slower than page
+      if (hero) {
+        hero.style.transform = `translateY(${scrollY * 0.38}px)`;
+      }
+
+      // Reveal sections with .fluffy-reveal class
+      document.querySelectorAll('.fluffy-reveal').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.88) {
+          el.classList.add('fluffy-reveal--visible');
+        }
+      });
+    });
+
+    // Add reveal class to key sections
+    document.querySelectorAll(
+      '.fluffy-featured, .fluffy-card, .fluffy-story__text, .fluffy-review, .fluffy-blog-card'
+    ).forEach(el => el.classList.add('fluffy-reveal'));
+
+    // Trigger once on load
+    window.dispatchEvent(new Event('scroll'));
+
+    // ── Review carousel ──
+    const track  = document.getElementById('reviewTrack');
+    const dotsEl = document.getElementById('reviewDots');
+    if (track && dotsEl) {
+      const cards   = track.querySelectorAll('.fluffy-review');
+      let current   = 0;
+      const visible = () => window.innerWidth >= 900 ? 3 : window.innerWidth >= 600 ? 2 : 1;
+
+      function buildDots() {
+        dotsEl.innerHTML = '';
+        const pages = Math.ceil(cards.length / visible());
+        for (let i = 0; i < pages; i++) {
+          const d = document.createElement('button');
+          d.className = 'fluffy-dot' + (i === 0 ? ' fluffy-dot--active' : '');
+          d.addEventListener('click', () => goTo(i));
+          dotsEl.appendChild(d);
+        }
+      }
+
+      function goTo(page) {
+        current = page;
+        const offset = page * visible() * (100 / visible());
+        track.style.transform = `translateX(-${offset}%)`;
+        dotsEl.querySelectorAll('.fluffy-dot').forEach((d, i) => {
+          d.classList.toggle('fluffy-dot--active', i === page);
+        });
+      }
+
+      buildDots();
+      window.addEventListener('resize', buildDots);
+    }
+
+    // ── Gallery thumbs ──
+    document.querySelectorAll('.fluffy-featured__thumb').forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const main = document.querySelector('.fluffy-featured__main-img');
+        main.style.opacity = '0';
+        setTimeout(() => {
+          main.src = thumb.src.replace('w=200', 'w=800');
+          main.style.opacity = '1';
+        }, 180);
+        document.querySelectorAll('.fluffy-featured__thumb').forEach(t => t.classList.remove('fluffy-featured__thumb--active'));
+        thumb.classList.add('fluffy-featured__thumb--active');
+      });
+    });
+  </script>
+</body>
+</html>
